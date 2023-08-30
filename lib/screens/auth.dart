@@ -169,7 +169,12 @@ class _AuthScreenState extends State<AuthScreen> {
                                     .colorScheme
                                     .primaryContainer,
                               ),
-                              child: Text(_isLogin ? 'Login' : 'SignUp'),
+                              child: Text(
+                                _isLogin ? 'Login' : 'SignUp',
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
                             ),
                           if (!_isAuthenticating)
                             TextButton(

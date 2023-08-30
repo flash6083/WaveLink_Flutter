@@ -31,7 +31,10 @@ class _ChatScreenState extends State<ChatScreen> {
         backgroundColor: Theme.of(context).colorScheme.onInverseSurface,
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.secondaryContainer,
-          title: const Text('Chats'),
+          title: Text(
+            'Chats',
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
           actions: [
             // Signing out
             IconButton(
